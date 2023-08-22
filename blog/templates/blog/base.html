@@ -17,8 +17,8 @@
                     <span class="glyphicon glyphicon-edit"></span>
                 </a>
                 <p class="top-menu">ようこそ {{ user.username }}
-                    <a href="{% url 'logout' %}"><small>ログアウト</small></a>
-                </p>
+                    <br>
+                    <span class="logout"><a href="{% url 'logout' %}">ログアウト</a></span></p>
             {% else %}
                 <a href="{% url 'login' %}" class="top-menu">
                     <span class="glyphicon glyphicon-lock"></span>
